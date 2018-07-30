@@ -1,0 +1,38 @@
+baseurl = "https://yag-ays.github.io/"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Yuki Okuda"
+title = "Out-of-the-box"
+disqusshortname = ""
+pluralizelisttitles = false
+googleAnalytics = "UA-17620484-8"
+
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "hogehoge"
+copyright = "Copyright © 2018 yag_ays"
+copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
+logofile = ""
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+align_left = false
+lang = "en"
+github = "yagays"
+#email = "yanagi.ayase@gmail.com"
+linkedin = "yukiokuda"
+twitter = "yag_ays"
+social_banner = "img/banner.png"
+posts_navigation = true
+small_banner_logo = false
+latestpostcount = 10
