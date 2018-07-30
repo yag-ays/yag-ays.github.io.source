@@ -23,3 +23,7 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 
+# Push source code:  https://github.com/yag-ays/yag-ays.github.io.source
+git add .
+git commit -m "$msg"
+git push -u origin master
