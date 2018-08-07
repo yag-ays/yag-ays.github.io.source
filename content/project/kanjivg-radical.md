@@ -157,7 +157,7 @@ kanji2radical["脳"] # kanji to radicals
 radical2kanji["月"] # radical to kanjis
 ```
 
-より詳細な利用方法は[`example/basic_usage.ipynb`](https://github.com/yagays/kanjivg-radical/blob/master/example/basic_usage.ipynb)を参照下さい。
+より詳細な利用方法は[`example/basic_usage.ipynb`](https://github.com/yagays/kanjivg-radical/blob/master/example/basic_usage.ipynb)を参照ください。
 
 ## 作成方法
 
