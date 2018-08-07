@@ -4,7 +4,7 @@ date: 2018-08-06T08:43:23+09:00
 draft: true
 ---
 
-![kanji_01](/img/kanji_01.png)
+![kanji_header](/img/kanji_header.png)
 
 kanjivg-radicalは、漢字を構成する[部首](https://ja.wikipedia.org/wiki/%E9%83%A8%E9%A6%96)や[偏旁](https://ja.wikipedia.org/wiki/%E5%81%8F%E6%97%81)を容易に扱えるように対応付けしたデータセットです。
 
