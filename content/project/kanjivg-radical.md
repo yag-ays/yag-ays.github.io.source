@@ -181,3 +181,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 ## 参考
 - [KanjiVG/kanjivg: Kanji description and vectorial data in correct stroke order](https://github.com/KanjiVG/kanjivg)
 - [KanjiVG \- 漢字/平仮名/カタカナ/アルファベット/数字の書き順付きSVG集 MOONGIFT](https://www.moongift.jp/2017/11/kanjivg-%E6%BC%A2%E5%AD%97%E5%B9%B3%E4%BB%AE%E5%90%8D%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%99%E3%83%83%E3%83%88%E6%95%B0%E5%AD%97%E3%81%AE%E6%9B%B8/)
+- [CHISE / 漢字構造情報データベース](http://www.chise.org/ids/)
+  - [CHISE IDS Find](http://www.chise.org/ids-find)
+  - [CHISE IDS 漢字検索の使い方―中国史研究のためのデジタルリソース入門](http://www.shuiren.org/chuden/toyoshi/syoseki/chise_ids.html)
+  - [CHISE プロジェクト](http://www.chise.org/dataset.ja.html)
