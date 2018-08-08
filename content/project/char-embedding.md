@@ -154,3 +154,7 @@ Convolutional AutoEncoderの構造は、中間層を300次元として両側を�
 - [PytorchによるAutoEncoder Familyの実装 \- 前に逃げる](http://dl-kento.hatenablog.com/entry/2018/02/22/200811)
 - [Pythonで日本語の文字分散表現を学習する \- 自然言語処理の深遠](http://hironsan.hatenablog.com/entry/learning-character-embeddings)
 - [Pretrained Character Embeddings for Deep Learning and Automatic Text Generation](https://minimaxir.com/2017/04/char-embeddings/)
+
+### データセット
+
+- [SNOW D17: 形の似ている漢字リスト \- 長岡技術科学大学 自然言語処理研究室](http://www.jnlp.org/SNOW/D17)
