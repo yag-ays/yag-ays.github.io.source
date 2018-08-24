@@ -5,7 +5,7 @@ draft: false
 ---
 ![emoji_ja](/img/emoji_ja.png)
 
-`emoji_ja`は、Unicodeに登録されている絵文字に対して、日本語の読みやキーワード、分類を付与したデータセットです。Unicodeで定められている名称やアノテーションを元に構築しています。
+[`emoji_ja`](https://github.com/yagays/emoji-ja)は、Unicodeに登録されている絵文字に対して、日本語の読みやキーワード、分類を付与したデータセットです。Unicodeで定められている名称やアノテーションを元に構築しています。
 
 
 TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2vec](https://arxiv.org/abs/1609.08359)や[deepmoji](https://deepmoji.mit.edu/)などの絵文字を使った自然言語処理の研究が行われるようになりました。絵文字を含む分析においては、絵文字の持つ豊富な情報や多彩な利用方法により、従来の形態素分析などのテキスト処理では対応できない場合があります。例えば、「今日は楽しかった😀」という文章では感情表現として絵文字が使われていますが、「今日は🍣を食べて🍺を飲んだ」ではそれぞれの対象を表す単語として用いられることもあります。[[佐藤,2015]]((https://www.slideshare.net/overlast/mecab-ipadicneologdpydatatokyo05pub-48560060))では絵文字の品詞を名詞/サ変名詞/動詞/副詞/記号/感動詞の6種類に分類しており、形態素解析に用いる[NEologd](https://github.com/neologd/mecab-ipadic-neologd)辞書にも絵文字が登録されています。
@@ -24,7 +24,7 @@ TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2
 ---
 
 ## 📁 データセット
-emoji-jaには下記の3種類のデータが含まれています。
+[`emoji-ja`](https://github.com/yagays/emoji-ja)には下記の3種類のデータが含まれています。
 
 - [`emoji_ja.json`](https://github.com/yagays/emoji-ja/blob/master/data/emoji_ja.json): 絵文字に対応するキーワードやメタ情報
 - [`group2emoji_ja.json`](https://github.com/yagays/emoji-ja/blob/master/data/group2emoji_ja.json): 絵文字のグループ/サブグループに対応した絵文字のリスト
