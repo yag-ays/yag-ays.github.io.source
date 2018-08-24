@@ -157,4 +157,5 @@ Convolutional AutoEncoderの構造は、中間層を300次元として両側を�
 
 ### データセット
 
-- [SNOW D17: 形の似ている漢字リスト \- 長岡技術科学大学 自然言語処理研究室](http://www.jnlp.org/SNOW/D17)
+- [SNOW D17: 形の似ている漢字リスト \- 長岡技術科学大学 自然言語処理研究室](http://www.jnlp.org/SNOW/D17
+)
