@@ -8,7 +8,7 @@ draft: false
 [`emoji_ja`](https://github.com/yagays/emoji-ja)は、Unicodeに登録されている絵文字に対して、日本語の読みやキーワード、分類を付与したデータセットです。Unicodeで定められている名称やアノテーションを元に構築しています。
 
 
-TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2vec](https://arxiv.org/abs/1609.08359)や[deepmoji](https://deepmoji.mit.edu/)などの絵文字を使った自然言語処理の研究が行われるようになりました。絵文字を含む分析においては、絵文字の持つ豊富な情報や多彩な利用方法により、従来の形態素分析などのテキスト処理では対応できない場合があります。例えば、「今日は楽しかった😀」という文章では感情表現として絵文字が使われていますが、「今日は🍣を食べて🍺を飲んだ」ではそれぞれの対象を表す単語として用いられることもあります。[[佐藤,2015]]((https://www.slideshare.net/overlast/mecab-ipadicneologdpydatatokyo05pub-48560060))では絵文字の品詞を名詞/サ変名詞/動詞/副詞/記号/感動詞の6種類に分類しており、形態素解析に用いる[NEologd](https://github.com/neologd/mecab-ipadic-neologd)辞書にも絵文字が登録されています。
+TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2vec](https://arxiv.org/abs/1609.08359)や[deepmoji](https://deepmoji.mit.edu/)などの絵文字を使った自然言語処理の研究が行われるようになりました。絵文字を含む分析においては、絵文字の持つ豊富な情報や多彩な利用方法により、従来の形態素分析などのテキスト処理では対応できない場合があります。例えば、「今日は楽しかった😀」という文章では感情表現として絵文字が使われていますが、「今日は🍣を食べて🍺を飲んだ」ではそれぞれの対象を表す単語として用いられることもあります。[[佐藤,2015]]((https://www.slideshare.net/overlast/mecab-ipadicneologdpydatatokyo05pub-48560060))では絵文字の品詞を名詞/サ変名詞/動詞/副詞/記号/感動詞の6種類に分類しており、形態素解析に用いる[NEologd](https://github.com/neologd/mecab-ipadic-neologd)辞書にも絵文字に対応する言葉が複数登録されています。
 
 このように、絵文字を機械的な処理や研究対象として扱うには、絵文字の読み方であったり意味を表す単語、または意味的な種類で分類したカテゴリが必要になります。こうした辞書は、英語においては[emojilib](https://github.com/muan/emojilib)がありますが、絵文字は文化的に異なった意味として用いられる場合があるため、それらの対訳をそのまま利用できないことがあります。
 
@@ -119,7 +119,7 @@ TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2
 - グループ/サブグループ
 - 国旗の名称
 
-これらの翻訳に際しては、独自に下記ガイドラインを基準として作成しています。誤りやニュアンスが異なる翻訳がある場合は[yagays/emoji\-ja](https://github.com/yagays/emoji-ja)のissueより登録下さい。
+これらの翻訳に際しては、独自に作成した下記ガイドラインを基準として作成しています。誤りやニュアンスが異なる翻訳がある場合は[yagays/emoji\-ja](https://github.com/yagays/emoji-ja)のissueより登録下さい。
 
 [Translation Guideline · yagays/emoji\-ja Wiki](https://github.com/yagays/emoji-ja/wiki/Translation-Guideline)
 
@@ -134,7 +134,7 @@ TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2
 ---
 
 ## 📝 参考
-### コーパス
+### コーパス・記事
 
 - 佐藤,2015 : [🍻\(Beer Mug\)の読み方を考える\(mecab\-ipadic\-NEologdのUnicode 絵文字対応\)](https://www.slideshare.net/overlast/mecab-ipadicneologdpydatatokyo05pub-48560060)
 - [日絵翻訳😍 with emojilib \- Qiita](https://qiita.com/risacan/items/7d80f7d53e3fb954a8fa)
