@@ -15,7 +15,7 @@ word2vecや系列モデル等で学習した分散表現の埋め込みベクト
 
 そこで今回は、すでに学習された単語の分散表現を可視化するために、
 
-1.  [gensim](https://radimrehurek.com/gensim/)を用いてベクトルを読み込み、
+1. [gensim](https://radimrehurek.com/gensim/)を用いてベクトルを読み込み、
 2. [PyTorch](https://pytorch.org/)のTensor形式に変換したうえで、
 3. [tensorboardX](https://github.com/lanpa/tensorboardX)を用いてTensorBoardが読み込めるログ形式に出力する
 
