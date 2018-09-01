@@ -4,7 +4,7 @@ date: 2018-08-28T21:37:26+09:00
 draft: false
 ---
 
-<video autoplay loop width="680">
+<video autoplay loop width="680" poster="/img/embedding-visualization_02.png">
 　　<source src="/img/embedding-visualization_02.webm">
 </video>
 
