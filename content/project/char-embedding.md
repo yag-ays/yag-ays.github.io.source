@@ -129,7 +129,7 @@ Convolutional AutoEncoderの構造は、中間層を300次元として両側を�
 
 可視化の手法を別記事にて追加しました。TensorBoardを用いてt-SNEによる低次元での可視化の方法を記載しています。
 
-[Out\-of\-the\-box \- 学習済み分散表現をTensorBoardで可視化する \(gensim/PyTorch/tensorboardX\)](/project/embedding-visualizatio)
+[Out\-of\-the\-box \- 学習済み分散表現をTensorBoardで可視化する \(gensim/PyTorch/tensorboardX\)](/project/embedding-visualization/)
 
 ---
 
