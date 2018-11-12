@@ -4,6 +4,7 @@ date: 2018-11-12T21:54:12+09:00
 draft: false
 ---
 
+![wed_title https://arxiv.org/abs/1810.10752](/img/wed_title.png)
 
 [Leading NLP Ninja](https://anchor.fm/lnlp-ninja)のep.12で紹介されていた[Word Embedding based Edit Distance](https://arxiv.org/abs/1810.10752)を実装してみました。
 
@@ -67,5 +68,6 @@ Word Embedding based Edit Distance（WED）は、文字列間の類似度を計�
 - [\[1810\.10752\] Word Embedding based Edit Distance](https://arxiv.org/abs/1810.10752)
   - 本記事の図表は、この論文から引用されたものです
 - [ep12: Word Embedding based Edit Distance by Leading NLP Ninja • A podcast on Anchor](https://anchor.fm/lnlp-ninja/episodes/ep12-Word-Embedding-based-Edit-Distance-e2g6s1)
+- [2018: Word Embedding based Edit Distance · Issue \#145 · jojonki/arXivNotes](https://github.com/jojonki/arXivNotes/issues/145)
 - [レーベンシュタイン距離 \- Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%BC%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%A4%E3%83%B3%E8%B7%9D%E9%9B%A2)
 - [いまさら編集距離 \(Levenshtein Distance\) を実装するぜ \| takuti\.me](https://takuti.me/note/levenshtein-distance/)
