@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # compress png images
-pngquant --ext .png --force --speed 1 content/img/*.png
+# pngquant --ext .png --force --speed 1 content/img/*.png
 
 # Build the project.
 hugo
