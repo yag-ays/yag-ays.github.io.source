@@ -1,5 +1,5 @@
 ---
-title: "日本語Wikipediaで学習したdoc2vevモデル"
+title: "日本語Wikipediaで学習したdoc2vecモデル"
 date: 2019-01-22T15:55:40+09:00
 draft: false
 ---
