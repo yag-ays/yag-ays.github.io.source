@@ -84,7 +84,7 @@ Out[]:
 ```
 ### 未知の入力文に対する埋め込み表現を得る
 
-`model.infer_vector()`には形態素解析済みのリストを入力する必要があります。そのため、ここではMeCabを用いた`tokenize()`を定義しています。
+`model.infer_vector()`には分かち書き済みの単語リストを入力する必要があります。そのため、ここではMeCabを用いた`tokenize()`を定義しています。
 
 ```py
 import MeCab
@@ -118,7 +118,7 @@ array([-4.52421233e-02, -4.60310102e-01, -7.35630572e-01,  1.16688378e-01,
 
 （出典：[潜伏キリシタン関連遺産、世界遺産登録 \- ウィキニュース](https://ja.wikinews.org/wiki/%E6%BD%9C%E4%BC%8F%E3%82%AD%E3%83%AA%E3%82%B7%E3%82%BF%E3%83%B3%E9%96%A2%E9%80%A3%E9%81%BA%E7%94%A3%E3%80%81%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E7%99%BB%E9%8C%B2)）
 
-### 未知の入力文に対して類似するドキュメントを表示する
+### 任意の入力文に対して類似するドキュメントを表示する
 
 ```py
 In []: model.docvecs.most_similar([model.infer_vector(tokenize(text))])
