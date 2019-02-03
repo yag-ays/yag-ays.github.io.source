@@ -7,3 +7,5 @@ draft: false
 yag_aysの資材置き場。out-of-the-boxなデータセット/コーパス/ノウハウを公開していきたい。
 
 記事一覧はこちら→ [PROJECT](https://yag-ays.github.io/project/)
+
+プロフィール→ [Yuki Okuda](https://yag.xyz/)
