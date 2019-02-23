@@ -63,7 +63,7 @@ All-but-the-Topを適用することによって、200次元以上のモデル�
 
 なお、単語から単語ベクトルへの変換において、分かち書きで2単語以上に分割された単語列に関しては、[堺澤ら](http://www.anlp.jp/proceedings/annual_meeting/2016/pdf_dir/P9-8.pdf)と同様に単語の平均ベクトルを用いています。また、どちらかに存在しない語彙が含まれていて単語ベクトルが計算できない場合は、類似度を`-1`としました。今回の実験が幾つかの既存研究における日本語単語類似度データセットでの結果と異なっているのは、これらの前処理や形態素解析の辞書が異なるからだと考えられるのですが、もし詳しい方がいらっしゃったらご指摘いただければと思います。
 
-実行した評価スクリプトは [`evaluation.py`](https://github.com/yagays/all_but_the_top/blob/master/src/evaluation.py)にあります。
+実行した評価スクリプトはレポジトリの[`evaluation.py`](https://github.com/yagays/all_but_the_top/blob/master/src/evaluation.py)にあります。
 
 ## ライセンス
 
