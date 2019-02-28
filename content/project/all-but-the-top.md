@@ -12,6 +12,8 @@ ICLR2018で発表された[All\-but\-the\-Top: Simple and Effective Postprocessi
 ## All-but-the-Top
 All-but-the-Topは、学習済みの分散表現に対して特定の後処理を加えることにより、分散表現の評価に用いられるタスクにおいて性能向上を達成した手法です。単語ベクトル内に存在する偏りを無くすために、平均で標準化し、主成分分析で幾つかの方向の主成分を引くという処理をするというのものです。たったこれだけという感じですが、SIF Embeddingの研究と同様に理論的な裏付けがあるようです。こういった背景や英語での実験結果は論文を参考ください。日本語での解説は[こちらの論文紹介スライド](https://www.slideshare.net/MacotoTachenaca/allbutthetop-simple-and-effective-postprocessing-for-word-representations-98611879)が参考になります。
 
+---
+
 ## 単語ベクトルのダウンロード
 以下の2つの学習済み分散表現に対してAll-but-the-Topの後処理を適用したファイルです。配布するモデルは、元のファイル名に加えて`abtt`という名前が付与されています。
 
@@ -28,6 +30,7 @@ All-but-the-Topは、学習済みの分散表現に対して特定の後処理�
 - cc.ja: [facebookresearch/fastText](https://github.com/facebookresearch/fastText/blob/master/docs/crawl-vectors.md)
   - E. Grave\*, P. Bojanowski\*, P. Gupta, A. Joulin, T. Mikolov, [Learning Word Vectors for 157 Languages](https://arxiv.org/abs/1802.06893)
 
+---
 
 ## 実装
 ソースコードは以下のレポジトリにあります。
@@ -35,6 +38,8 @@ All-but-the-Topは、学習済みの分散表現に対して特定の後処理�
 [yagays/all\_but\_the\_top](https://github.com/yagays/all_but_the_top)
 
 ハイパーパラメータであるPCAの次元数は、論文中で経験的に示された`d/100`を用いています（`d`は単語ベクトルの次元数）。
+
+---
 
 ## 評価
 ここでは、日本語での評価データセットが公開されている「[日本語単語類似度データセット](https://github.com/tmu-nlp/JapaneseWordSimilarityDataset)」を用いた単語類似度による評価を行いました。以下の数値はスピアマンの順位相関係数に100を掛けたものです。この数値が高いほど、人間による単語間の類似度の傾向と近いことを表します。
@@ -65,9 +70,13 @@ All-but-the-Topを適用することによって、200次元以上のモデル�
 
 実行した評価スクリプトはレポジトリの[`evaluation.py`](https://github.com/yagays/all_but_the_top/blob/master/src/evaluation.py)にあります。
 
+---
+
 ## ライセンス
 
 本ページで配布しているモデルファイルのライセンスは[Creative Commons Attribution-ShareAlike 3.0.](https://creativecommons.org/licenses/by-sa/3.0/)です。
+
+---
 
 ## 参考
 
