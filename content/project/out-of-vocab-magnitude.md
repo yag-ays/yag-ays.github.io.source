@@ -89,7 +89,7 @@ Out[ ]: ['ube', 'ber', 'erx', 'rxl', 'uber', 'berx', 'erxl', 'uberx', 'berxl']
 ---
 
 ## 実装
-`magnitude`のコードを参考に、日本語でも実装しました。
+`magnitude`のコードを参考に、一部日本語の正規化のロジックも入れて実装しました。
 
 [yagays/oov\_magnitude\_ja](https://github.com/yagays/oov_magnitude_ja)
 
