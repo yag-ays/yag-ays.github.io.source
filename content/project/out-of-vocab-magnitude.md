@@ -161,6 +161,13 @@ Out[10]:
 
 ---
 
+## 追記
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">論文中にもちらっと書いてあるんですが、GloVeとかword2vecとか古いモデルでも使えるというところだけがメリットだと思います。<br>基本はsentencepieceとかfasttextなどのsubwordで対応していくのが今後の主流なんじゃないですかねー。</p>&mdash; やぐ (@yag_ays) <a href="https://twitter.com/yag_ays/status/1100985642878529536?ref_src=twsrc%5Etfw">February 28, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+---
+
 ## 参考
 
 - [plasticityai/magnitude: A fast, efficient universal vector embedding utility package\.](https://github.com/plasticityai/magnitude)
