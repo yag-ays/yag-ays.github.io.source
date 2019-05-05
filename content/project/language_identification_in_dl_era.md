@@ -41,7 +41,7 @@ draft: false
 ## 単語や文字単位での言語判定
 [LanideNN: Multilingual Language Identification on Character Window](https://arxiv.org/abs/1701.03338)
 
-単一文章に対して複数言語を判定できるようになれば、次に知りたくなるのは文章中での言語の出現位置や、どこで言語が変わったかといった文章内の情報です。さきほどのGoogleの論文ではトークン単位で言語判定していましたが、EACL 2017で発表された`LanideNN`では入力文を文字単位で言語判定するモデルを提案しています。
+単一文章に対して複数言語を判定できるようになれば、次に知りたくなるのは文章中での言語の出現位置や、どこで言語が変わったかといった文章内の情報です。さきほどのGoogleの論文ではトークン単位で推定しつつ全体の文章の言語判定をしていましたが、EACL 2017で発表された`LanideNN`では入力文を文字単位で言語判定するモデルを提案しています。
 
 <figure>
 ![language_identification_02](/img/language_identification_02.png)
