@@ -28,7 +28,7 @@ draft: false
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-この論文で提案している手法`CMX`は、まずトークン(単語)単位で言語判定をしたのちに、貪欲法を用いて文章全体での言語判定を行うというものです。前半の言語判定に、文字特徴量とトークンの特徴量の両方を用いたシンプルなニューラルネットワークを用いています。
+この論文で提案している手法`CMX`は、まずトークン(単語)単位で言語判定をしたのちに、貪欲法を用いて文章全体での言語判定を行うというものです。前半の言語判定には文字特徴量とトークンの特徴量の両方を用いたシンプルなニューラルネットワークを用いています。
 
 <figure>
 ![language_identification_01](/img/language_identification_01.png)
