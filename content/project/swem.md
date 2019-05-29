@@ -11,7 +11,7 @@ draft: false
 ## 概要
 文章に対する固定次元の分散表現を得る手法としては、doc2vecやSkip-thoughts、テキスト間の含意関係を学習することで分散表現を得るinfersent、最近では強力な言語モデルとなったBERTといった方法があります。これらの手法は、単語ベクトルに加えて文章ベクトルを得るためのニューラルネットワーク自体を、大規模コーパスから学習させる必要があります。
 
-そこで、より単純ながらも後続タスクへの精度がでる文章埋め込みの計算方法として、追加学習やパラメータチューニングを必要とせず単語埋め込みだけを利用するSWEMが提案されました。これはACL2018 ["Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms"]([1805.09843 Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms](https://arxiv.org/abs/1805.09843))にて発表された方法で、複数のデータセットにおける評価において、既存のCNN/RNNモデルと同等またはそれ以上の精度となっています。ロジックは単純ながらもある程度良い性能を示すことから、強力なベースラインとして利用することができると考えられます。
+そこで、より単純ながらも後続タスクへの精度がでる文章埋め込みの計算方法として、追加学習やパラメータチューニングを必要とせず単語埋め込みだけを利用するSWEMが提案されました。これはACL2018 ["Baseline Needs More Love: On Simple Word-Embedding-Based Models and Associated Pooling Mechanisms"](https://arxiv.org/abs/1805.09843)にて発表された方法で、複数のデータセットにおける評価において、既存のCNN/RNNモデルと同等またはそれ以上の精度となっています。ロジックは単純ながらもある程度良い性能を示すことから、強力なベースラインとして利用することができると考えられます。
 
 ## 方法
 
