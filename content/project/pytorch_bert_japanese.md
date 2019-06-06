@@ -96,9 +96,9 @@ class JumanTokenizer():
 ```py
 juman_tokenizer = JumanTokenizer()
 
-tokens = ["[CLS]"] + juman_tokenizer.tokenize(text)
-bert_tokens = bert_tokenizer.tokenize(" ".join(tokens[:128]))  # max_seq_len
-ids = bert_tokenizer.convert_tokens_to_ids(bert_tokens)
+tokens = juman_tokenizer.tokenize(text)
+bert_tokens = bert_tokenizer.tokenize(" ".join(tokens))
+ids = bert_tokenizer.convert_tokens_to_ids(["[CLS]"] + bert_tokens[:126] + ["[SEP]"])
 tokens_tensor = torch.tensor(ids).reshape(1, -1)
 ```
 
@@ -106,11 +106,11 @@ tokens_tensor = torch.tensor(ids).reshape(1, -1)
 
 ```
 # text
-  吾輩は猫である
+  吾輩は猫である。
 # tokens
-  ['[CLS]', '吾輩', 'は', '猫', 'である']
+  ['[CLS]', '吾輩', 'は', '猫', 'である', '。', '[SEP]']
 # tokens_tensor
-  tensor([[   2,    1,    9, 4817,   32]])
+  tensor([[   2,    1,    9, 4817,   32,    7,    3]])
 ```
 
 ### 3. BERTのモデルに入力し、特徴ベクトルを得る
