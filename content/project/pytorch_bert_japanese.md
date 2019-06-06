@@ -82,6 +82,8 @@ bert_tokenizer = BertTokenizer("/path/to/Japanese_L-12_H-768_A-12_E-30_BPE/vocab
 
 ```py
 # Jumanによるトークナイザ
+from pyknp import Juman
+
 class JumanTokenizer():
     def __init__(self):
         self.juman = Juman()
