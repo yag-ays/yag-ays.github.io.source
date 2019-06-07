@@ -21,7 +21,7 @@ BERT (Bidirectional Encoder Representations from Transformers) は、NAACL2019�
 BERTの実装は、pytorchで書かれた[`pytorch-pretrained-BERT`](https://github.com/huggingface/pytorch-pretrained-BERT)がベースになります。また形態素解析器は、学習済みモデルに合わせるため[JUMAN++](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN++)を利用します。
 
 ## 方法
-今回は`BertWithJumanModel`というトークナイズとBERTによる推論を行うクラスを自作しています。ソースコード自体は下記レポジトリにあり、また各ステップでの計算方法を本記事の後半で解説しています。
+今回は`BertWithJumanModel`という、トークナイズとBERTによる推論を行うクラスを自作しています。ソースコード自体は下記レポジトリにあり、また各ステップでの計算方法を本記事の後半で解説しています。
 
 - [yagays/pytorch\_bert\_japanese](https://github.com/yagays/pytorch_bert_japanese)
 
@@ -93,7 +93,7 @@ class JumanTokenizer():
         return [mrph.midasi for mrph in result.mrph_list()]
 ```
 
-分かち書きしたトークン列には、テキストの冒頭に`[CLS]`トークンを付与します。得られたトークン列は、英語のトークナイズに対応できるようにスペース区切りで結合し、最後に`BertTokenizer()`でid列に変換します。この際には、学習済みモデルの`max_seq_length`が128に設定されているため、トークン列を前方から128個目までにしています。
+分かち書きしたトークン列は、英語のトークナイズに対応できるようにスペース区切りで結合し、最後に`BertTokenizer()`でid列に変換します。この際に、テキストの最初と最後に`[CLS]`および`[SEP]`トークンを付与します。また、学習済みモデルの`max_seq_length`が128に設定されているため、トークン列の長さを調整しています。
 
 ```py
 juman_tokenizer = JumanTokenizer()
