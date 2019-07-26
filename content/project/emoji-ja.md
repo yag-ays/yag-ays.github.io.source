@@ -14,6 +14,8 @@ TwitterやInstagramなどのSNSを通じた絵文字の普及により、[emoji2
 
 そのため、日本語で容易に使えるリソースとして`emoji_ja`を作成しました。
 
+(追記:2019/07/26) [絵文字の日本語読み辞書をUnicode 12\.0対応に更新しました \- Out\-of\-the\-box](https://yag-ays.github.io/project/emoji-ja-update-12/)
+
 ---
 
 ## 💻 ダウンロード
