@@ -6,19 +6,19 @@ draft: false
 
 ![https://www.pexels.com/photo/aerial-view-of-house-village-2255938/](/img/elasticsearch-similarity-search_header.png)
 
-
 ## 概要
 
 Elasticseachに分散表現のベクトルに対する類似文書検索が実装されたということで、以下のElasticのブログ記事を参考に類似文書検索を試してみました。
 
 [Text similarity search in Elasticsearch using vector fields \| Elastic Blog](https://www.elastic.co/jp/blog/text-similarity-search-with-vectors-in-elasticsearch)
 
-
 ### tl;dr
 
 - Elasticsearchでベクトルの類似文書検索機能が実装された
 - Wikipedia日本語記事全116万エントリーに対して検索時間は約0.8秒
 - Elasticsearchの既存の検索機能と組み合わせることが可能
+
+---
 
 ## 方法
 ### 1. Elasticsearchの設定
@@ -147,15 +147,13 @@ response = client.search(
 
 ちなみに、1位の「日本遺産」に違和感を感じますが、エントリー内に日本国内の世界遺産が列挙されていることから結果的に類似度が高くなったのではないかと考えられます。
 
-
-
 ### 検索時間
 文の分散表現を計算する部分とElasticsearchに検索クエリを投げて結果が返ってくる2つを計測しました。それぞれの結果は以下のようになりました。
 
 - embedding time: `0.84 ms`
 - search time: `879.49 ms`
 
-全体の実行時間としては1.0秒かからないくらいで、その殆どはElasticsearchの類似度検索にかかっているようです。ここでは`match_all`というクエリすべての文書を対象にしていることから、登録したインデックス全件に対してコサイン類似度を計算していると思われます。さすがに100万件を超えると少し処理が重いようです。ただ今回の検証ではElasticsearch自体のチューニングはおこなっていないため、計算機のリソースや設定次第でもう少し早くなる可能性はあると思います。
+全体の実行時間としては1.0秒かからないくらいで、その殆どはElasticsearchの類似度検索にかかっているようです。ここでは`match_all`というクエリすべての文書を対象にコサイン類似度を計算しているため、さすがに100万件を超えると少し処理が重いようです。ただ今回の検証ではElasticsearch自体のチューニングはおこなっていないため、計算機のリソースや設定次第でもう少し早くなる可能性はあると思います。
 
 ---
 
