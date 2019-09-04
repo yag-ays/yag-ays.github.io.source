@@ -210,3 +210,4 @@ Elasticsearchは豊富な検索機能があり、それを使うことで分散�
 ## 参考
 
 - [Text similarity search in Elasticsearch using vector fields \| Elastic Blog](https://www.elastic.co/jp/blog/text-similarity-search-with-vectors-in-elasticsearch)
+- [Dense vector datatype \| Elasticsearch Reference \[master\] \| Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/master/dense-vector.html)
