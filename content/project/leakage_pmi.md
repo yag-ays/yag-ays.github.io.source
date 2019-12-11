@@ -24,7 +24,7 @@ https://www.aclweb.org/anthology/N18-2017/
 今回は自己相互情報量（以降PMI）を使います。PMIは単語の共起を表す指標として自然言語処理で広く使われている方法です。このPMIを特定のラベルの特定の単語に対して計算することにより、そのラベルと強く関連している単語を抽出します。計算式としては以下のようになります。
 
 ![](/img/leakage_pmi_01.png)
-_Img: https://www.aclweb.org/anthology/N18-2017 より_
+_Img: [Annotation Artifacts in Natural Language Inference Data (NAACL 2018)](https://www.aclweb.org/anthology/N18-2017) より_
 
 分子にはあるラベルの文書内に存在するある単語の頻度、分母には全ラベルの文書内に存在する単語の頻度と、ラベルの文書数があります。式の気持ちとしては、特定のラベルに偏った単語は`p(word, class)`と`p(word, .)`がほぼ同じようになるためPMIが大きくなり、全ラベルにまたがって存在する単語は`p(word, class)`よりも`p(word,.)`の方が大きくなるため、PMIが小さくなるようになっています。
 
