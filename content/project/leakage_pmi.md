@@ -4,6 +4,11 @@ date: 2019-12-11T09:20:57+09:00
 draft: false
 ---
 
+![https://www.pexels.com/photo/gray-and-black-hive-printed-textile-691710/](/img/leakage_pmi_header.png)
+
+
+この記事は[Sansan Advent Calendar 2019 \- Adventar](https://adventar.org/calendars/3924)の11日目の記事です。
+
 ## 概要
 自然言語処理における教師有り学習では、対象となる文書から何らかの意味やパターンを見つけ、正解ラベルとの対応関係をモデルが学習することで、未知の文書に対するラベルの予測を行います。このとき、学習データの文書内に何らかの不適切な情報が混入することにより、意図せずモデルの精度が向上することがあります。これをリーク (Leakage)と呼び、自然言語処理のみならず機械学習が陥りやすい問題として広く認識されています。
 
