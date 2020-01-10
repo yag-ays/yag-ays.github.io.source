@@ -20,6 +20,7 @@ draft: false
 
 ```py
 from flair.embeddings import WordEmbeddings, DocumentPoolEmbeddings, Sentence
+from flair.data import build_japanese_tokenizer
 ja_embedding = WordEmbeddings("ja")
 ```
 
