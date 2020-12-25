@@ -80,5 +80,6 @@ cv2.imwrite("./upscaled.png", result)
 今回はOpenCVを用いて深層学習モデルの超解像を適用する方法を紹介しました。OpenCVという枠組みで適用できてかつ学習済みモデルが配布されているので、気軽に実装して試すことができました。提供されている学習済みモデルの手法が少し古かったり、パラメータの変更など込み入ったことをするには機能が不足している感じは否めないですが、気軽に使えるという点ではOpenCVのcontribで提供されている今回の方法はとても良いと思います。
 
 ## 参考
+- [OpenCV: Upscaling images: single\-output](https://docs.opencv.org/master/d5/d29/tutorial_dnn_superres_upscale_image_single.html)
 - [Deep Learning based Super Resolution with OpenCV \| by Xavier Weber \| Towards Data Science](https://towardsdatascience.com/deep-learning-based-super-resolution-with-opencv-4fd736678066)
 - [OpenCV Super Resolution with Deep Learning \- PyImageSearch](https://www.pyimagesearch.com/2020/11/09/opencv-super-resolution-with-deep-learning/)
