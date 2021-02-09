@@ -83,22 +83,22 @@ array([[[243, 245, 244],
     Symbol(
         text="y",
         bbox=Bbox(
-            top_left=Vertices(x=128, y=20),
-            bottom_right=Vertices(x=142, y=20),
+            top_left=Vertex(x=128, y=20),
+            bottom_right=Vertex(x=142, y=20),
         ),
     ),
     Symbol(
         text="a",
         bbox=Bbox(
-            top_left=Vertices(x=143, y=20),
-            bottom_right=Vertices(x=158, y=20),
+            top_left=Vertex(x=143, y=20),
+            bottom_right=Vertex(x=158, y=20),
         ),
     ),
     Symbol(
         text="g",
         bbox=Bbox(
-            top_left=Vertices(x=159, y=21),
-            bottom_right=Vertices(x=175, y=21),
+            top_left=Vertex(x=159, y=21),
+            bottom_right=Vertex(x=175, y=21),
         ),
     ),
 ]
