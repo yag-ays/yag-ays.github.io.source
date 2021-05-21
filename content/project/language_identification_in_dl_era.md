@@ -13,7 +13,7 @@ draft: false
 
 しかしながら、言語判定は今でも様々な論文が発表される分野です。極端な例を出すならば、Googleは自然言語処理において1st tierな学会であるEMNLPで2018年に言語判定の論文を出しています。このように現在でも研究され論文が通る分野であり、大学のみならず企業からも論文が発表される領域です。では、どこに研究の課題が残されているのでしょうか？また近年大きく発展した深層学習は、言語判定にどのように影響しているのでしょうか？
 
- ここでは、近年発表された3種類の言語判定の論文をもとに、深層学習時代の言語判定について見ていきたいと思います。
+ここでは、近年発表された3種類の言語判定の論文をもとに、深層学習時代の言語判定について見ていきたいと思います。
 
 ---
 
@@ -30,9 +30,7 @@ draft: false
 
 この論文で提案している手法`CMX`は、まずトークン(単語)単位で言語判定をしたのちに、貪欲法を用いて文章全体での言語判定を行うというものです。前半の言語判定には文字特徴量とトークンの特徴量の両方を用いたシンプルなニューラルネットワークを用いています。
 
-<figure>
 ![language_identification_01](/img/language_identification_01.png)
-</figure>
 (Ref. [https://arxiv.org/abs/1810.04142](https://arxiv.org/abs/1810.04142))
 
 
@@ -43,14 +41,12 @@ draft: false
 
 単一文章に対して複数言語を判定できるようになれば、次に知りたくなるのは文章中での言語の出現位置や、どこで言語が変わったかといった文章内の情報です。さきほどのGoogleの論文ではトークン単位で推定しつつ全体の文章の言語判定をしていましたが、EACL 2017で発表された`LanideNN`では入力文を文字単位で言語判定するモデルを提案しています。
 
-<figure>
 ![language_identification_02](/img/language_identification_02.png)
-</figure>
 (Ref. [https://arxiv.org/abs/1701.03338](https://arxiv.org/abs/1701.03338))
 
 提案モデルは文字を入力にしたBidirectional RNNを構成し、それぞれの文字に対して言語を予測するモデルになっています。長い文章の場合は、特定のwindow sizeごとにモデルから予測を出力し、windowをずらしながら文章全体をカバーするよう予測していきます。
 
-`LanideNN `は実装や学習済みモデル、データセットも公開されています。
+`LanideNN`は実装や学習済みモデル、データセットも公開されています。
 
 - [tomkocmi/LanideNN](https://github.com/tomkocmi/LanideNN)
 - [LanideNN \| ÚFAL](https://ufal.mff.cuni.cz/tom-kocmi/lanidenn)
@@ -62,11 +58,11 @@ draft: false
 
 既存の言語判定モデルがコーパスを作成する際には、研究の主流であるヨーロッパ系の言語が主体となっていたり、Wikipediaなどのウェブソースでは人口が多い言語で書かれた文章が手に入りやすい環境であることにより、どうしても主要な言語で精度が出せることが重要でした。この論文では、地理的であったり社会的な多様性を考慮したコーパスを作成し、かつモデルもそうした細かな差異を認識できるよう工夫しています。
 
-モデルは`LanideNN `と同様に文字ベースのニューラルネットを採用しており、綴りや音韻といった要素をモデルに組み込むことを意図していると論文では述べられています。言語判定はトークン単位で行われます。ニューラルネットについてはAttention付きのencode-decoderモデルで、encoderとdecoderはそれぞれ3-layerのRNNです。
+モデルは`LanideNN`と同様に文字ベースのニューラルネットを採用しており、綴りや音韻といった要素をモデルに組み込むことを意図していると論文では述べられています。言語判定はトークン単位で行われます。ニューラルネットについてはAttention付きのencode-decoderモデルで、encoderとdecoderはそれぞれ3-layerのRNNです。
 
 `Equilid`は実装や学習済みモデルも公開されており、配布されている学習済みモデルでは70言語に対応しているようです。
 
--  [davidjurgens/equilid: Socially\-Equitable Language Identification](https://github.com/davidjurgens/equilid)
+- [davidjurgens/equilid: Socially\-Equitable Language Identification](https://github.com/davidjurgens/equilid)
 
 ---
 
